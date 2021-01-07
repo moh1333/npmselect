@@ -1,0 +1,11 @@
+Package: npmselect
+Type: Package
+Title: Estimation and Model Selection for Time-Varying Nonlinear
+		Regression Models
+Version: 1.0
+Depends: R (>= 3.1.1), ibr
+Date: 2020-11-30
+Author: Michael Harding
+Maintainer: Michael Harding <moh1333@bu.edu>
+Description: Functions to perform model selection for time-varying nonlinear regression
+

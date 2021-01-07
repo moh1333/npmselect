@@ -1,0 +1,2 @@
+importFrom(ibr, npregress)
+export(epk, gen_x, GIC, i_in_I, model_1, model_2, model_3, model_4, rss_n, select_model_default, x_in_X)
