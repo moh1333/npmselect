@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Harding"
+  given-names: "Michael"
+title: "npmselect: Model Selection and Estimation for Time-Varying Nonlinear Regression"
+version: 0.1.1
+date-released: 2021-01-07
+url: "https://github.com/moh1333/npmselect"

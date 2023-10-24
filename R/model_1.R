@@ -7,7 +7,7 @@ model_1 = function(x, y, sband, tband, skern = 'e', tkern = 'e'){
   # Create estimated and index vectors
   n = length(y)
   y_hat = rep(0,n)
-  index = seq(1,n)/n
+  idx = seq(1,n)/n
   x = as.matrix(x)
   
   # Fit values
@@ -17,8 +17,8 @@ model_1 = function(x, y, sband, tband, skern = 'e', tkern = 'e'){
     z_prime = y*z
 
     # Generate time-LLRs
-    f_hat_xi = npregress(index, z, bandwidth = tband, kernel = tkern, control.par = list(degree = 1))
-    t_hat_xi = npregress(index, z_prime, bandwidth = tband, kernel = tkern, control.par = list(degree = 1))
+    f_hat_xi = npregress(idx, z, bandwidth = tband, kernel = tkern, control.par = list(degree = 1))
+    t_hat_xi = npregress(idx, z_prime, bandwidth = tband, kernel = tkern, control.par = list(degree = 1))
     
     # Peel off fitted value at x_i
     y_hat[i] = t_hat_xi$fitted[i]/f_hat_xi$fitted[i]

@@ -5,7 +5,7 @@ select_model_default = function(x, y, X, I, verb = FALSE){
   d = dim(x)[2]
   cs = prod(apply(x,2,IQR))
   ct = 0.5
-  idx = seq(1/n,1,length.out = n)
+  idx = seq(1,n)/n
   tau = log(n)*n^(-(d+3)/(d+4))
   gic = rep(Inf,4)
   if(verb){
